@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pendaftaran Pasien Klinik Kuning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #f1c40f, #d4ac0d);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    header {
+      width: 100%;
+      background: #b7950b;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 1.9rem;
+    }
+    
+    .Formulir {
+      background: #fefefe;
+      margin-top: 2rem;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 90%;
+    }
+    
+    .Formulir h1 {
+      text-transform: uppercase;
+      text-align: center;
+      color: #b7950b;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+    
+    form p {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      color: #333;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: border 0.3s;
+      box-sizing: border-box;
+    }
+    
+    input[type="text"]:focus {
+      border: 2px solid #d4ac0d;
+      outline: none;
+    }
+    
+    button {
+      background: #d4ac0d;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    button:hover {
+      background: #b7950b;
+    }
+    
+    #hasil {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      border-left: 6px solid #f1c40f;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      color: #333;
+      display: none;
+    }
+    
+    #hasil h2 {
+      margin-top: 0;
+      color: #f1c40f;
+      font-size: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    
+    #hasil p {
+      margin: 8px 0;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+    
+    #hasil b {
+      color: #b7950b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Klinik Kuning</h1>
+    <p>Formulir Pendaftaran Pasien</p>
+  </header>
+
+  <div class="Formulir">
+    <h1>Formulir Pendaftaran Pasien</h1>
+    
+    <script>
+      var yakin = confirm("Apakah kamu yakin ingin membuka formulir ini?");
+      if (yakin){
+        window.location = "https://otakudesu.best/anime/akamoto-day-part-2-sub-indo/";
+      } else{
+        document.write("");
+      }
+    </script>
+    
+    <form id="FormRegistrasi">
+      <script>
+        var labelNama = prompt("Apa yang Mau Kamu Minta ?", "Nama Lengkap" );
+        document.write("<p><b>"+ labelNama +"</b></p>");
+      </script>
+      <input type="text" id="aa" required>
+        
+      <script>
+        var labelUmur = prompt("Apa yang Mau Kamu Minta ?", "Umur" );
+        document.write("<p><b>"+ labelUmur +"</b></p>");
+      </script>
+      <input type="text" id="ii" required>
+      
+      <script>
+        var labelJK = prompt("Apa yang Mau Kamu Minta ?", "Jenis Kelamin" );
+        document.write("<p><b>"+ labelJK +"</b></p>");
+      </script>
+      <input type="text" id="uu" required>
+      
+      <script>
+        var labelAlamat = prompt("Apa yang Mau Kamu Minta ?", "Alamat" );
+        document.write("<p><b>"+ labelAlamat +"</b></p>");
+      </script>
+      <input type="text" id="ee" required>
+      
+      <script>
+        var labelRiwayat = prompt("Apa yang Mau Kamu Minta ?", "Riwayat Penyakit" );
+        document.write("<p><b>"+ labelRiwayat +"</b></p>");
+      </script>
+      <input type="text" id="oo" required>
+      
+      <script>
+        var labelGejala = prompt("Apa yang Mau Kamu Minta ?", "Gejala Awal" );
+        document.write("<p><b>"+ labelGejala +"</b></p>");
+      </script>
+      <input type="text" id="ai" required>
+      
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+  
+  <div id="hasil"></div>
+
+  <script>
+    const form = document.getElementById("FormRegistrasi");
+    const hasil = document.getElementById("hasil");
+    
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const nama = document.getElementById("aa").value;
+      const umur = document.getElementById("ii").value;
+      const jk = document.getElementById("uu").value;
+      const alamat = document.getElementById("ee").value;
+      const riwayat = document.getElementById("oo").value;
+      const gejala = document.getElementById("ai").value;
+
+      hasil.style.display = "block";
+      hasil.innerHTML = `
+        <h2>DATA PRIBADI PASIEN</h2>
+        <p><b>Nama:</b> ${nama}</p>
+        <p><b>Umur:</b> ${umur}</p>
+        <p><b>Jenis Kelamin:</b> ${jk}</p>
+        <p><b>Alamat:</b> ${alamat}</p>
+        <p><b>Riwayat Penyakit:</b> ${riwayat}</p>
+        <p><b>Gejala Awal:</b> ${gejala}</p>
+      `;
+    });
+  </script>
+
+</body>
+</html>
